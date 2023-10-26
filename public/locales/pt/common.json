@@ -1,0 +1,16 @@
+{
+    "test": "Um exemplo simples",
+    "change-locale": "Alterar localidade para \"{{changeTo}}\"",
+    "error-with-status": "Ocorreu um erro {{statusCode}} no servidor",
+    "error-without-status": "Ocorreu um erro no servidor",
+    "cookie-title": "Esse site usa cookies",
+    "cookie-message": "Nós armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento.",
+    "cookie-accept": "Aceitar",
+    "cookie-reject": "Não aceitar",
+    "privacy-policy": "Política de privacidade",
+    "404-title": "Página não encontrada",
+    "404-message": "Desculpe, não conseguimos encontrar a página que você está procurando. Pode ter existido, mas agora você observou que não existe agora.",
+    "404-button-label": "Voltar ao início",
+    "Services":"Nossos serviços",
+    "contct-form-url": "https://forms.gle/Q2CsbYjQQXy8NjsS6"
+}

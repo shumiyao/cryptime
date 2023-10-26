@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: SymphonyRegular;
+  src: url('/fonts/Symphony-Regular.otf') format('opentype');
+}
+
+.grunge-text {
+  background: url(/images/homepage/tile-seamless-grunge.jpg) repeat;
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  /* -webkit-text-stroke: 3px #ffaa00; */
+}
+
+.grunge-bg {
+  background: url(/images/homepage/tile-seamless-grunge.jpg) repeat;
+  background-size: cover;
+}
+
+.twist-a-bit-left {
+  transform: rotate(-0.9deg);
+}
+
+.twist-a-bit-right {
+  transform: rotate(1deg);
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+img {
+  pointer-events: none;
+  cursor: default;
+}
+
+/** grid item animation **/
+
+.zoom-in-out-fade {
+  animation: zoom-in-zoom-out 1s ease;
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation: fade-in 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+

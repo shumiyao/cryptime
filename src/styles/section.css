@@ -1,0 +1,61 @@
+.section a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .section strong {
+    color: black;
+  }
+  
+  .section h1 {
+    font-size: 2.2em;
+  }
+  
+  .section h2 {
+    font-size: 1.6em;
+    line-height: 2.5rem;
+  }
+  
+  .section h3 {
+    font-size: 1.4em;
+  }
+  
+  .section h4 {
+    font-size: 1.2em;
+  }
+  
+  .section h5 {
+    font-size: 1em;
+  }
+  
+  .section p {
+    /* font-size: 1.2em;
+    line-height: 2.3rem; */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  
+  .section ul,
+  .section ol {
+    list-style: disc;
+    margin-left: 2em;
+  }
+
+  .section li {
+    text-align: -webkit-match-parent;
+    line-height: 1.75rem;
+    font-size: 1rem;
+  }
+  
+  .section ol {
+    list-style: decimal;
+  }
+  
+  .section a {
+    text-decoration: underline;
+  }
