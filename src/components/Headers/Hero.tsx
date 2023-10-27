@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 
 function Hero(): ReactElement {
   const { i18n } = useTranslation();
-  const currentLocale = i18n.language === 'default' ? (i18n.language = 'pt') : i18n.language;
+  const currentLocale = i18n.language === 'default' ? (i18n.language = 'ja') : i18n.language;
   const [localizedSlides, setLocalizedSlides] = useState([]);
   const { slides, slideContainerHeight, autoPlaySpeedMs, showNavigation, showPagination, loopSlides } = sliderContent;
 
