@@ -13,10 +13,10 @@ function Cryptimer(): ReactElement {
   const messages = {
     intro: `ご案内致します。。。毎度、クリプタをご利用いただき、誠にありがとうございます。ビットコインの米ドル価格を、、%%notch%%、、間隔でお知らせ致します。`,
     intro_once: `ご案内致します。。。毎度、クリプタをご利用いただき、誠にありがとうございます。ビットコインの米ドル価格をお知らせ致します。`,
-    btcprice: '現在のビットコインの価格は、%%price%% 米ドルです。直近の変動率は、1時間で、約、%%percent_change_1h%%％の%%increaseOrDecrease_percent_change_1h%%、、、、1日で、約、%%percent_change_24h%%％の%%increaseOrDecrease_percent_change_24h%%、、、、７日間で、約、%%percent_change_7d%%％の%%increaseOrDecrease_percent_change_7d%%です。',
-    btcpriceticker: '　　　　　　　　　　　　　　⭐️ 現在のビットコインの価格は、%%price%% 米ドルです。直近の変動率は、1時間で約%%percent_change_1h%%％の%%increaseOrDecrease_percent_change_1h%%。1日で約%%percent_change_24h%%％の%%increaseOrDecrease_percent_change_24h%%。７日間で約%%percent_change_7d%%％の%%increaseOrDecrease_percent_change_7d%%です。',
+    btcprice: '現在のビットコインの価格は、%%price%% 米ドルです。直近の変動率は、1時間で、約、%%percent_change_1h%%％の%%increaseOrDecrease_percent_change_1h%%、、、、1日で、約、%%percent_change_24h%%％の%%increaseOrDecrease_percent_change_24h%%、、、、７日間で、約、%%percent_change_7d%%％の%%increaseOrDecrease_percent_change_7d%%です。。%%interval%%後に再びお知らせいたします。',
+    btcpriceticker: '⭐️ 現在のビットコインの価格は、%%price%% 米ドルです。直近の変動率は、1時間で約%%percent_change_1h%%％の%%increaseOrDecrease_percent_change_1h%%。1日で約%%percent_change_24h%%％の%%increaseOrDecrease_percent_change_24h%%。７日間で約%%percent_change_7d%%％の%%increaseOrDecrease_percent_change_7d%%です。',
     loading: 'データを取得中です。しばらくお待ちください。',
-    error: 'エラーが発生しました。'
+    error: 'エラーが発生しました。',
   };
   //
   const value = useContext(AppContext);
@@ -109,12 +109,13 @@ function Cryptimer(): ReactElement {
           increaseOrDecrease_percent_change_24h: increaseOrDecrease(percent_change_24h),
           percent_change_7d: String(percent_change_7d),
           increaseOrDecrease_percent_change_7d: increaseOrDecrease(percent_change_7d),
+          interval: intervalStrings[intervalNotch].label,
         };
 
         execSpeak(replaceTranslationText(messages.btcprice, priceData));
         setStatusInfo(replaceTranslationText(messages.btcpriceticker, priceData));
       });
-      setStatusInfo(messages.loading);
+    setStatusInfo(messages.loading);
     if (intervalNotch === '0') {
       await execSpeak(replaceTranslationText(messages.intro_once, uiData));
       getDataThenSpeak();
