@@ -1,6 +1,18 @@
 {
-    "our-mission-title": "Nossa missão",
-    "our-mission": "Nossa missão é buscar negócios que beneficiem 'o vendedor', 'o comprador' e 'a sociedade', não favorecendo exclusivamente nossos próprios interesses, mas desejando a felicidade da sociedade. Nossa abordagem comercial, inspirada no conceito japonês de 'Sanpo Yoshi', visa o bem-estar de todos os envolvidos.",
-    "our-value-title": "Nosso valor",
-    "our-value": "Apresentando a Marca Familiar Miyao-Andrade: Fortes Valores Familiares, Sonhos Compartilhados e um Laço de União. Acreditamos no amor, no respeito, na honestidade e no trabalho árduo para que possamos alcançar o sucesso trabalhando juntos em prol de um objetivo comum."
+    "Crypto + Timer a.k.a Cryptime": "Crypto + Timer a.k.a Cryptime",
+    "Welcome to Cryptime": "Bem-vindo ao Cryptime",
+    "If you wish to inquire about the price of Bitcoin through voice, please choose a frequency interval, then click on the button to hear the current bitcoin price.": "Se desejar consultar o preço do Bitcoin por voz, escolha um intervalo de frequência e clique no botão para ouvir o preço atual do Bitcoin.",
+    "Only %%interval%%": "Apenas %%interval%%",
+    "Every %%interval%%": "A cada %%interval%%",
+    "once": "uma vez",
+    "5 minutes": "5 minutos",
+    "10 minutes": "10 minutos",
+    "30 minutes": "30 minutos",
+    "60 minutes": "60 minutos",
+    "Once": "Uma vez",
+    "5 mins": "5 mins",
+    "10 mins": "10 mins",
+    "30 mins": "30 mins",
+    "60 mins": "60 mins",
+    "Tell me the current BTC price": "Diga-me o preço atual do BTC"
 }

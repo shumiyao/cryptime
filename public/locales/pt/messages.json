@@ -1,0 +1,13 @@
+{
+    "intro": "Estamos aqui para ajudar... Obrigado por usar o Crypta. Vamos fornecer-lhe o preço atual do Bitcoin com intervalos de %%notch%%.",
+    "intro_once": "Estamos aqui para ajudar... Obrigado por usar o Crypta. Vamos fornecer-lhe o preço atual do Bitcoin.",
+    "btcprice": "O preço atual do Bitcoin é de %%price%% USD. A taxa de mudança recente é de aproximadamente %%percent_change_1h%%% na última hora, cerca de %%percent_change_24h%%% no último dia e cerca de %%percent_change_7d%%% nos últimos sete dias. Vamos notificar você novamente em %%interval%%.",
+    "btcpriceticker": "⭐️ O preço atual do Bitcoin é de %%price%% USD. A taxa de mudança recente é de aproximadamente %%percent_change_1h%%% na última hora, cerca de %%percent_change_24h%%% no último dia e cerca de %%percent_change_7d%%% nos últimos sete dias.",
+    "loading": "Os dados estão a ser recuperados. Por favor, aguarde um momento.",
+    "error": "Ocorreu um erro.",
+    "no-change":"Sem alteração",
+    "increase":"Aumentar",
+    "decrease":"Diminuir",
+    "locale":"pt-PT",
+    "voice": "Joana"
+}

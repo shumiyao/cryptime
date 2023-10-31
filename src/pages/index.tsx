@@ -23,7 +23,7 @@ export default IndexPage;
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common','home'])),
+      ...(await serverSideTranslations(locale, ['common','home','messages'])),
       // Will be passed to the page component as props
     },
   };

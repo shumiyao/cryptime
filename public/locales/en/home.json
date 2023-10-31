@@ -1,6 +1,18 @@
 {
-    "our-mission-title": "Our Mission",
-    "our-mission": "Our mission is to seek businesses that benefit ‘the seller,’ ‘the buyer,’ and ‘society,’ not favoring solely our own interests but desiring the happiness of society. The business approach, inspired by the Japanese concept of ‘Sanpo Yoshi,’ aims for the well-being of all involved.",
-    "our-value-title": "Our Value",
-    "our-value": "Introducing the Miyao-Andrade Family Brand: Strong Family Values, Shared Dreams, and a Uniting Bond. We believe in love, respect, honesty, and hard work so that we can achieve success by working together towards a common goal."
+    "Crypto + Timer a.k.a Cryptime": "Crypto + Timer a.k.a Cryptime",
+    "Welcome to Cryptime": "Welcome to Cryptime",
+    "If you wish to inquire about the price of Bitcoin through voice, please choose a frequency interval, then click on the button to hear the current bitcoin price.": "If you wish to inquire about the price of Bitcoin through voice, please choose a frequency interval, then click on the button to hear the current bitcoin price.",
+    "Only %%interval%%": "Only %%interval%%",
+    "Every %%interval%%": "Every %%interval%%",
+    "once": "once",
+    "5 minutes": "5 minutes",
+    "10 minutes": "10 minutes",
+    "30 minutes": "30 minutes",
+    "60 minutes": "60 minutes",
+    "Once": "Once",
+    "5 mins": "5 mins",
+    "10 mins": "10 mins",
+    "30 mins": "30 mins",
+    "60 mins": "60 mins",
+    "Tell me the current BTC price": "Tell me the current BTC price"
 }

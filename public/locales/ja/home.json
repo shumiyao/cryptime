@@ -1,6 +1,18 @@
 {
-    "our-mission-title": "私たちの使命",
-    "our-mission": "私たちの経営理念は、「売り手」「買い手」「世間」の三方にとって益となるような商売を追求し、自己の利益だけでなく社会の幸せを願うことです。このビジョンは、日本の「三方よし」という概念をルーツに持っています。",
-    "our-value-title": "私たちの価値観",
-    "our-value": "ミヤオ・アンドラーデ家では、強い家族の価値観、共有の夢、団結の絆を尊びます。私たちは愛、尊敬、誠実さ、勤勉を信じ、家族全員で一丸となって協力することで共通の目標を成し遂げます。"
+    "Crypto + Timer a.k.a Cryptime": "クリプト + タイマー＝「クリプタ」",
+    "Welcome to Cryptime": "「クリプタ」へようこそ",
+    "If you wish to inquire about the price of Bitcoin through voice, please choose a frequency interval, then click on the button to hear the current bitcoin price.": "ビットコインの価格の音声照会をご希望の際は、間隔を選択し、ボタンをクリックしてください。",
+    "Only %%interval%%": "%%interval%%のみ",
+    "Every %%interval%%": "%%interval%%間隔",
+    "once": "一回",
+    "5 minutes": "5分",
+    "10 minutes": "10分",
+    "30 minutes": "30分",
+    "60 minutes": "60分",
+    "Once": "一回",
+    "5 mins": "5分",
+    "10 mins": "10分",
+    "30 mins": "30分",
+    "60 mins": "60分",
+    "Tell me the current BTC price": "「クリプタ」してみる"
 }
