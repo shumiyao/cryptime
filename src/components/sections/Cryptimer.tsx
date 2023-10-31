@@ -63,13 +63,13 @@ function Cryptimer(): ReactElement {
       });
     };
 
-    const increaseOrDecrease = (changePerce: number): string => (changePerce === 0 ? t('no-change',{ns:'messages'}) : changePerce > 0 ? t('increase',{ns:'messages'}) : t('decrease',{ns:'messages'}));
+    const increaseOrDecrease = (changePerce: number): string => (changePerce === 0 ? t('no-change', { ns: 'messages' }) : changePerce > 0 ? t('increase', { ns: 'messages' }) : t('decrease', { ns: 'messages' }));
 
     const uiData = {
       notch: intervalStrings[intervalNotch].label,
     };
     const voice = speechSynthesis.getVoices().find((voice) => {
-      return voice.name === t('voice',{ns:'messages'});
+      return voice.name === t('voice', { ns: 'messages' });
     });
     const postData = async () => {
       //   const data = {
@@ -84,7 +84,7 @@ function Cryptimer(): ReactElement {
       return response.json();
     };
 
-    const getDataThenSpeak = () =>
+    const getDataThenSpeak = (templateName: string = 'btcprice_once') =>
       postData().then(async (data) => {
         console.log(data);
         const price = Math.floor(data.price * 100) / 100;
@@ -103,17 +103,17 @@ function Cryptimer(): ReactElement {
           interval: intervalStrings[intervalNotch].label,
         };
 
-        execSpeak(replaceTranslationText(t('btcprice', { ns: 'messages' }), priceData));
+        execSpeak(replaceTranslationText(t(templateName, { ns: 'messages' }), priceData));
         setStatusInfo(replaceTranslationText(t('btcpriceticker', { ns: 'messages' }), priceData));
       });
     setStatusInfo(t('loading', { ns: 'messages' }));
     if (intervalNotch === '0') {
       await execSpeak(replaceTranslationText(t('intro_once', { ns: 'messages' }), uiData));
-      getDataThenSpeak();
+      getDataThenSpeak('btcprice_once');
     } else {
       await execSpeak(replaceTranslationText(t('intro', { ns: 'messages' }), uiData));
-      getDataThenSpeak();
-      announcementInterval = setInterval(() => getDataThenSpeak(), intervalStrings[intervalNotch].durationMs);
+      getDataThenSpeak('btcprice');
+      announcementInterval = setInterval(() => getDataThenSpeak('btcprice'), intervalStrings[intervalNotch].durationMs);
     }
   };
 
